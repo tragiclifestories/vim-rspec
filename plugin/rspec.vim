@@ -73,7 +73,7 @@ function! s:DefaultTerminalCommand()
 endfunction
 
 function! s:CurrentFilePath()
-  return @%
+  return expand('%:p')
 endfunction
 
 function! s:GuiCommand(command)
